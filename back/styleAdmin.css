@@ -1,0 +1,84 @@
+*{
+  font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*::::::::::::::::::::::::::::::::: inicio HEADER :::::::::::::::::::::::::::::::::*/
+.header {
+    background-color: #d8d5d5;
+    box-shadow: 2px 2px 2px 1px rgba(11, 11, 11, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin-bottom: 25px;
+    font-weight: 550;
+  }
+  
+  .header-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+  }
+  
+  .header-menu a {
+    display: inline-block;
+    padding: 16px 0px;
+    position: relative;
+    text-decoration: none;
+    color: #053c8d;
+  }
+  
+  .header-menu a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: black;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+  
+  .header-menu a:hover::after,
+  .header-menu a.ativo::after {
+    width: 100%;
+  }
+  
+  .header ul {
+    padding: 0px;
+    list-style: none;
+  }
+  
+  
+  .logo {
+    width: 300px;
+    margin: 10px 10px 5px 15px;
+  }
+  /*::::::::::::::::::::::::::::::::: fin HEADER :::::::::::::::::::::::::::::::::*/
+
+
+  /*::::::::::::::::::::::::::::::::: inicio FOOTER :::::::::::::::::::::::::::::::::*/
+.footer {
+    background-color: #d8d5d5;
+    font-weight: 550;
+    box-shadow: 2px 2px 2px 1px rgba(11, 11, 11, 0.2);
+    text-align: center;
+    margin-top: 25px;
+   }
+  
+  .footer a{
+    color: black;
+  }
+  
+  .footer-negro{
+    padding: 25px;
+    background-color: black;
+    color:#dedcdc;
+    margin-bottom: 0px;
+  }
+  .footer-negro a{
+    color: #dedcdc;
+  }
+ /*:::::::::::::::::::::::::::::::::  fin FOOTER :::::::::::::::::::::::::::::::::*/

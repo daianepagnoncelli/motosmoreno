@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/motosmoreno.css">
+    <link rel="icon" href="image/Logos/favicon.png" type="image/x-icon">
+    <title>Motos Moreno</title>
+    <script>
+        var popup;
+        function AvisoLegal() {
+            popup = window.open('motosmoreno_aviso_legal_.html', '_blank', 'width=300,height=400')
+        }
+
+        function ProteccionDeDatos() {
+            popup = window.open('motosmoreno_proteccion_de_datos.html', '_blank', 'width=300,height=400')
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="image/Logos/logo_taller_small.png">
+            </a>
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="index.html" style="color:#005CFC;" ;>INICIO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="cita_previa.html">CITA PREVIA</a></li>
+                    <li><a href="contactos.html">CONTACTO</a></li>
+                    <li class="icons"><a href="https://api.whatsapp.com/send?phone=34607845184"><img src="image/fotos_mm/whatsapp.png" width="30px" height="30px"></a></li>
+                </ul>
+                <div class="escalable">
+                    <label for="check_burguer" class="burguer_ico">&nbsp;</label>
+                    <input type="checkbox" id="check_burguer" class="chekeando" />
+                    <div class="desplegable">
+                        <a href="index.html">INICIO</a>
+                        <a href="servicios.html">SERVICIOS</a>
+                        <a href="cita_previa.html" class="actual">CITA PREVIA</a>
+                        <a href="contactos.html">CONTACTO</a>
+                        <a href="https://api.whatsapp.com/send?phone=34607845184">WHATSAPP</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Bienvenidos al sitio web MOTOSMORENO.COM</h1>
+            </div>
+            <img class="imgslider" src="image/slider/img_3.1.JPG" style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Espacio dedicado al mantenimiento integral, ubicado en Esplugues de Llobregat.</h1>
+            </div>
+            <img class="imgslider" src="image/slider/img_2.1.JPG" style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Ponemos a su entera disposición toda nuestra experiencia.</h1>
+            </div>
+            <img class="imgslider" src="image/slider/img_1.1.JPG" style="width: 100%; height: 100%;">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="motosmoreno.js"></script>
+
+    <div id="intro">
+        <p>30 años dedicados al mundo de la motocicleta</p>
+        <p>Experiencia en motores de 4 tiempos</p>
+        </p>Especialistas en sistemas de inyección electrónica, electricidad y electrónica general de la moto/scooter</p>
+        <p>Servicio Oficial - Kymco</p>
+    </div>
+
+    <section class="section">
+        <h1 class="titulo">Descubre todo lo que tenemos para ofrecerte. Tu satisfacción es nuestra prioridad.</h1>
+        <div class="grid">
+            <div class="M1">&nbsp;</div>
+            <div class="posicion">
+                <h1 class="h1">Servicios</h1>
+                <article class="servicios"><a href="servicios.html"><img src="image/fotos_mm/servicios.jpg"></a></article>
+                <article>
+                    <a href="#" class="presentacio">
+                        <i>"Más que un taller, somos una comunidad de amantes de las motos. Únete a nosotros y descubre
+                            lo que significa el verdadero servicio de calidad."</i>
+                    </a>
+                    <a href="servicios.html" class="inf">más información</a>
+                </article>
+            </div>
+
+            <div class="posicion">
+                <h1 class="h1">Cita previa</h1>
+                <article class="cita_previa"><a href="cita_previa.html"><img src="image/fotos_mm/calendario.jpg"></a></article>
+                <article>
+                    <a href="#" class="presentacio">
+                        <i>"Sabemos que tu tiempo es valioso. Por eso, hemos implementado un sistema de citas previas
+                            para ofrecerte un servicio más rápido y eficiente."</i>
+                    </a>
+                    <a href="cita_previa.html" class="inf">más información</a>
+                </article>
+            </div>
+
+            <div class="posicion">
+                <h1 class="h1">Contacto</h1>
+                <article class="contacto"><a href="contactos.html"><img src="image/fotos_mm/contacto.jpg"></a></article>
+                <article>
+                    <a href="#" class="presentacio">
+                        <i>"¿Tienes alguna duda sobre nuestros servicios o necesitas asesoramiento para tu moto? No dudes
+                            en contactarnos.
+                            tenemos la información que necesitas."</i>
+                    </a>
+                    <a href="contactos.html" class="inf">más información</a>
+                </article>
+            </div>
+            <div class="M1">&nbsp;</div>
+        </div>
+    </section>
+
+    <section class="section1">
+        <h1 class="titulo0">Descubre todo lo que tenemos para ofrecerte. Tu satisfacción es nuestra prioridad.</h1>
+        <div class="grid">
+            <div class="linea1">&nbsp;</div>
+            <h1 class="cancel0">Servicios</h1>
+            <article class="servicios"><a href="servicios.html"><img src="image/fotos_mm/servicios.jpg"></a></article>
+            <article class="cancel">
+                <h1>Servicios</h1>
+                <a href="#" class="presentacion1">
+                    <i>"Más que un taller, somos una comunidad de amantes de las motos. Únete a nosotros y descubre
+                        lo que significa el verdadero servicio de calidad."</i>
+                </a>
+            </article>
+            <div class="linea1">&nbsp;</div>
+            <h1 class="cancel0">Cita Previa</h1>
+            <article class="cita_previa"><a href="cita_previa.html"><img src="image/fotos_mm/calendario.jpg"></a></article>
+            <article class="cancel">
+                <h1>Cita previa</h1>
+                <a href="#" class="presentacion1">
+                    <i>"Sabemos que tu tiempo es valioso. Por eso, hemos implementado un sistema de citas previas
+                        para ofrecerte un servicio más rápido y eficiente."</i>
+                </a>
+            </article>
+            <div class="linea1">&nbsp;</div>
+            <h1 class="cancel0">Contactos</h1>
+            <article class="contacto"><a href="contactos.html"><img src="image/fotos_mm/contacto.jpg"> </a></article>
+            <article class="cancel">
+                <h1>Contacto</h1>
+                <a href="#" class="presentacion1"><i>"¿Tienes alguna duda sobre nuestros servicios o necesitas asesoramiento para tu moto?
+                        No dudes en contactarnos.
+                        Estamos aquí para proporcionarte la información que necesitas."</i>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="arriba">&nbsp;</div>
+        <div class="espacio">&nbsp;</div>
+        <h2>CONTACTO</h2>
+        <p>Esplugues de Llobregat: Calle Jocs Florals, nº 8</p>
+        <p>CP: 08950</p>
+        <p><a href="https://www.google.com/maps?q=2.096117 E,41.372460 N" target="_blank">
+                <img class="icono-loc" src="image/fotos_mm/direccion.png"></p>
+        <p><a href="tel:+34934735496">Telefono: 93 473 54 96</a></p>
+        <p><a href="https://api.whatsapp.com/send?phone=34607845184">WhatsApp: 607 845 184 </a></p>
+        <p><a href="mailto:info@motosmoreno.es">info@motosmoreno.es</a></p>
+        <p class="footer-negro"><a style="text-decoration: underline" href="#"> MOTOS MORENO - Tu taller de motocicletas de confianza</a> <a href="#" target="_blank" onClick="AvisoLegal();"> | Aviso legal</a> |
+            <a href="#" target="_blank" onClick="ProteccionDeDatos();">Protección de Datos |</a>
+            NIF:44190303N | Copyright © 2023 Todos los derechos reservados.
+        </p>
+        <div class="abajo">&nbsp;</div>
+    </footer>
+    </div>
+</body>
+
+</html>

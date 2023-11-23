@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/motosmoreno.css">
+    <meta name="author" content="Luis Andres Arguello Badillo" />
+    <link rel="icon" href="image/logos/" type="image/x-icon">
+    <script>
+        var popup;
+        function AvisoLegal() {
+            popup = window.open('motosmoreno_aviso_legal_.html', '_blank', 'width=300,height=400')
+        }
+        function ProteccionDeDatos() {
+            popup = window.open('motosmoreno_proteccion_de_datos.html', '_blank', 'width=300,height=400')
+        }
+    </script>
+    <title>Motos Moreno</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="image/logos/logo_taller_small.png">
+            </a>
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html" style="color:#005CFC;" ;>SERVICIOS</a></li>
+                    <li><a href="cita_previa.html">CITA PREVIA</a></li>
+                    <li><a href="contactos.html">CONTACTO</a></li>
+                    <li class="icons"><a href="https://api.whatsapp.com/send?phone=34607845184"><img src="image/fotos_mm/whatsapp.png" width="30px" height="30px"></a></li>
+                </ul>
+                <div class="escalable">
+                    <label for="check_burguer" class="burguer_ico">&nbsp;</label>
+                    <input type="checkbox" id="check_burguer" class="chekeando" />
+                    <div class="desplegable">
+                        <a href="index.html">INICIO</a>
+                        <a href="servicios.html">SERVICIOS</a>
+                        <a href="cita_previa.html" class="actual">CITA PREVIA</a>
+                        <a href="contactos.html">CONTACTO</a>
+                        <a href="https://api.whatsapp.com/send?phone=34607845184">WHATSAPP</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <h1 id="tituloServicios">Servicios</h1>
+
+    <section id="SeccionServicios">
+
+        <div title="REPARACIÓN DE AVERÍAS">
+
+            <img id="imgServicios" src="image/fotos_mm/reparaciones1.jpg">
+            <p class="servicio">REPARACIÓN DE AVERÍAS</h3>
+            <p class="txtServicio">En nuestro taller disponemos de los medios necesarios para resolver, con eficacia, cualquier tipo de avería en la motocicleta, explicando al cliente las diferentes alternativas que se puedan presentar durante la reparación, y siempre con la máxima profesionalidad.</p>
+
+        </div>
+
+        <div title="MANTENIMIENTO INTEGRAL DE LA MOTOCICLETA">
+
+            <img id="imgServicios" src="image/fotos_mm/mantenimientoMoto.jpg">
+            <p class="servicio">MANTENIMIENTO INTEGRAL DE LA MOTOCICLETA</p>
+            <p class="txtServicio">Realizamos revisiones periódicas y de mantenimiento, con presupuesto previo, siempre adaptándonos a las necesidades de cada cliente y de cada motocicleta, controlando toda la información necesaria para el cliente en nuestra base de datos con el objetivo de mantener el vehículo siempre a punto.</p>
+
+        </div>
+
+        <div title="VENTA E INSTALACIÓN DE RECAMBIOS Y ACCESORIOS">
+
+            <img id="imgServicios" src="image/fotos_mm/venta1.jpg">
+            <p class="servicio">VENTA E INSTALACIÓN DE RECAMBIOS Y ACCESORIOS</p>
+            <p class="txtServicio">Mantenemos contacto con las primeras marcas de recambios y accesorios, para cubrir las necesidades de cada cliente, en cuanto a seguridad, estética y confort: Neumáticos, Sistemas de Seguridad, Iluminación, Portaequipajes, Escapes, Kits de transmisión, y un largo etc.</p>
+
+        </div>
+
+        <div title="ASESORAMIENTO MECANICO DE CONFIANZA">
+
+            <img id="imgServicios" src="image/fotos_mm/asesoramiento1.jpg">
+            <p class="servicio">ASESORAMIENTO MECANICO DE CONFIANZA</p>
+            <p class="txtServicio">Asesoramos a nuestros clientes para que hagan sus sueños realidad, desde los consejos más prácticos para uso urbano del vehículo, hasta la puesta a punto de la motocicleta para el viaje de media-larga distancia que tanto tiempo lleva planificando: sin compromiso y entre amigos.</p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="arriba">&nbsp;</div>
+        <div class="espacio">&nbsp;</div>
+        <h2>CONTACTO</h2>
+        <p>Esplugues de Llobregat: Calle Jocs Florals, nº 8</p>
+        <p>CP: 08950</p>
+        <p><a href="https://www.google.com/maps?q=2.096117 E,41.372460 N" target="_blank">
+                <img class="icono-loc" src="image/fotos_mm/direccion.png"></p>
+        <p><a href="tel:+34934735496">Telefono: 93 473 54 96</a></p>
+        <p><a href="https://api.whatsapp.com/send?phone=34607845184">WhatsApp: 607 845 184 </a></p>
+        <p><a href="mailto:info@motosmoreno.es">info@motosmoreno.es</a></p>
+        <p class="footer-negro"><a style="text-decoration: underline" href="#"> MOTOS MORENO - Tu taller de motocicletas de confianza</a> <a href="#" target="_blank" onClick="AvisoLegal();"> | Aviso legal</a> |
+            <a href="#" target="_blank" onClick="ProteccionDeDatos();">Protección de Datos |</a>
+            NIF:44190303N | Copyright © 2023 Todos los derechos reservados.
+        </p>
+        <div class="abajo">&nbsp;</div>
+    </footer>
+</body>
+
+</html>

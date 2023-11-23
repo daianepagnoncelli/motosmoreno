@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+main {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.izquierdo {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+
+.mes-navegacion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid 2px black; */
+}
+/* .mesAnterior{
+    width: 50%;
+    border: solid 1px black;
+    text-align: start;
+}
+.mesSiguiente{
+    width: 50%;
+    border: solid 1px black;
+    text-align: end;
+} */
+.boton-mes{
+    border: solid 3px rgb(28, 109, 249);
+    border-radius: 5px;
+    background-color: rgb(113, 141, 253);
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 0 15px 0 15px;
+}
+
+#current-date {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+section {
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    width: 100%;
+}
+
+/* Estilos para las casillas del calendario */
+li {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    transition: background-color 0.3s, cursor 0.3s;
+    cursor: pointer;
+    margin: 3px 3px 3px 3px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la casilla del día */
+.day-name {
+    background-color: #eee;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+}
+
+/* Estilos para el número del día */
+.day {
+    /* font-weight: bold; */
+    /* font-size: 30px; */
+    /* height: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90px;
+
+    /* margin-bottom: 0; */
+}
+
+/* Estilos comunes para las clases de disponibilidad */
+.disponibilidad,
+.no-disponible,
+.reservado {
+    border: 1px dotted;
+    width: 100%;
+    height: 20px;
+    background-color: #ccc; /* Puedes personalizar este color */
+    font-size: 0.8rem; /* Tamaño de fuente relativo al contenedor */
+    margin-bottom: -30px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos específicos para cada estado */
+.disponibilidad {
+    border: 1px dotted rgb(0, 85, 3);
+    background-color: rgb(149, 247, 70);
+}
+
+.no-disponible {
+    border: 1px dotted rgb(128, 128, 128);
+    background-color: rgb(192, 192, 192);
+}
+
+.reservado {
+    border: 1px dotted rgb(255, 0, 0);
+    background-color: rgb(255, 122, 122);
+}
+
+
+/* Estilos al pasar el ratón sobre la casilla del día */
+.day-name:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.current-day {
+    background-color: rgba(114, 174, 252, 0.856);
+}
+
+.derecho {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Estilos al contenedor del formulario */
+.contenedor {
+    width: 90%;
+    background: lightgray;
+    padding: 5%;
+}
+
+/* Estilos a los campos de texto y áreas de texto */
+input[type="text"], input[type="email"],
+textarea {
+    width: 90%;
+    height: 25px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 100px;
+    max-width: 90%;
+}
+
+/* Estilos a las etiquetas */
+label {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 2;
+}
+
+.submit {
+    background-color: #ff5555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 7px 0px;
+    font-size: 17px;
+    width: 50%;
+	margin:auto;
+    transition: background-color 0.3s, cursor 0.3s;
+}
+.submit:hover {
+    background-color: #fc2a2a; /* Color mÃ¡s oscuro al pasar el mouse */
+}
+
+/* Estilos para el contenedor del checkbox y el texto */
+.terminos-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el checkbox */
+input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Estilos para "*" para los campos obligatorio  */
+.required::after {
+    content: "*";
+    color: #ff5555;
+    font-size: 20px;
+}
+
+/* ======================================================================================
+==================Fin de estilos para el formulario ============================ */
+.no-click {
+    pointer-events: none; /* Evita que los elementos sean clicables */
+    cursor: default; /* Cambia el cursor a uno predeterminado */
+    /* height: 120%; */
+     /* Fondo transparente para los espacios vacíos */
+    /* background-color: transparent; */
+}
